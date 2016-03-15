@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="headline">
+<h1> 2016 Presidental Primary Race Heats Up </h1>
+
+<p>The 2016 election cycle is well underway as candidates fight to win their party's nomination by gaining the most delegates. Delegates are won at each state's individual primary or caucus, either at large or by a percentage of the vote, per state law. The crowded GOP field shurnk to just four hopefulls after several did not receive enough votes early on in the primary cycle while only Martin O'Malley dropped out of the Democratic field. See the current totals below.</p><br />
+<p> BY: Jenna Leo <em>Source: NY Times</em>
+ <hr>
+ <h4> KEY: <b>Primary</b> <style="color:#00CC00;">Occurred</style> <style="color:#99FF66">Upcoming</style> <b>Caucus</b> <style="color:9900FF;">Occurred</style> <style="color:#9999FF">Upcoming</style></h4> </div>
+
+
+
+<div class="container straighten">
+    <div id="popup">
+       <div class="caucus" id="Iowa"></div> 
+        <div class="primary" id="NewHampshire"></div>
+        <div class="caucus" id="Nevada"></div>
+        <div class="primary" id="SouthCarolina"></div>
+        <div class="primary" id="Alabama"></div>
+        <div class="caucus" id="Alaska"></div>
+        <div class="caucus" id="Samoa"></div>
+        <div class="primary" id="Arkansas"></div>
+        <div class="caucus" id="Colorado"></div>
+        <div class="caucus" id="Minnesota"></div>
+        <div class="k2" id="NorthDakota"></div>
+        <div class="k2" id="Wyoming"></div>
+        <div class="primary" id="DemAbroad"></div>
+        <div class="primary" id="Georgia"></div>
+        <div class="primary" id="Mass"></div>
+        <div class="primary" id="Ok"></div>
+        <div class="primary" id="Tenn"></div>
+        <div class="primary" id="Texas"></div>
+        <div class="primary" id="Vermont"></div>
+        <div class="primary" id="Virgina"></div>
+        <div class="primary" id="Louisiana"></div>
+        <div class="primary" id="PuertoRico"></div>
+        <div class="caucus" id="Kansas"></div>
+        <div class="caucus" id="Kentucky"></div>
+        <div class="caucus" id="Maine"></div>
+        <div class="caucus" id="Nebraska"></div>
+        <div class="upprimary" id="Hawaii"></div>
+         <div class="upprimary" id="Idaho"></div>
+        <div class="upprimary" id="Michigan"></div>
+        <div class="upprimary" id="Mississippi"></div>
+        <div class="k2" id="Guam"></div>
+        <div class="k2" id="DC"></div>   
+        <div class="k2" id="Northern"></div>    
+        <div class="upprimary" id="Florida"></div>
+        <div class="upprimary" id="Illinois"></div>  
+        <div class="upprimary" id="Missouri"></div>  
+        <div class="upprimary" id="NorthCarolina"></div>
+        <div class="upprimary" id="Ohio"></div>    
+        <div class="k2" id="VirginIslands"></div>
+        <div class="upprimary" id="Arizona"></div>
+        <div class="upprimary" id="Utah"></div>
+        <div class="k2" id="Washington"></div>
+        <div class="upprimary" id="Wisconsin"></div>
+        <div class="upprimary" id="NewYork"></div>
+        <div class="upprimary" id="Connecticut"></div>
+        <div class="upprimary" id="Delaware"></div>
+        <div class="upprimary" id="Maryland"></div>
+        <div class="upprimary" id="Pennsylvania"></div>
+        <div class="upprimary" id="RhodeIsland"></div>
+        <div class="upprimary" id="Indiana"></div>
+        <div class="upprimary" id="WestVirginia"></div>
+        <div class="upprimary" id="Oregon"></div>
+        <div class="upprimary" id="California"></div>
+        <div class="upprimary" id="Montana"></div>
+        <div class="upprimary" id="NewJersey"></div>
+        <div class="upprimary" id="NewMexico"></div>
+        <div class="upprimary" id="SouthDakota"></div>
+        
+        
+              
+        
+
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Blank_map_of_the_United_States.PNG" />
+    </div>
+</div>
+
+<div class="textbox">
+    <div class="popuptitle">2016 Presidential Primary Results</div>
+  <h3> Click on a marker to find out more about each state's primary or caucus and who won.</h3>  <br /> <br /><br /><br />
+ 
+  
+  
+    
+  
+  
+</div>
+
+
+<style>
+.headline {
+	width: 60%;
+}
+
+h4 {
+	font-size: .8em;
+	font-family: Lucida Grande, veranda, sans-serif;
+}
+
+h1 {
+	color: black;
+	font-family: Lucida Grande, veranda, sans-serif;
+	font-size: 2.5em;
+}
+
+<p> {
+	color: black;
+	font-family:Lucida Grande, veranda, arial, sans-serif;
+	font-size: .5em;
+}
+
+h3 {
+	color: #a4a4a4;
+	font-family: Lucida Grande, veranda, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+.textbox {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-family: Lucida Grande, veranda, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.container img {    
+    width: 100%;
+}
+.caucus{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #9900FF;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.k2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #9999FF;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+
+.primary{   
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #00CC00;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+
+.upprimary {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #99FF66;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+	
+
+.caucus:hover {
+    background-color: yellow;
+}
+
+.primary:hover {
+    background-color: yellow;
+}
+
+.upprimary:hover {
+    background-color: orange;
+}
+
+.k2:hover {
+    background-color: orange;
+}
+
+
+#Iowa {
+	 top: 34%;
+    right: 43%;
+}
+
+#NewHampshire {
+     top: 21%;
+    left: 90%;
+}
+
+
+#Nevada {
+	    top: 40%;
+    left: 13%;
+}
+
+#SouthCarolina {
+	top: 61%;
+    left: 80%;
+}
+
+
+#Alabama {
+    top: 67%;
+    left: 68%;
+}
+
+#Alaska {
+    top: 82%;
+    left: 10%;
+}
+
+#Samoa {
+	    top: 96%;
+    left: 57%;
+}
+
+#Arkansas {
+	    top: 61%;
+    left: 56%;
+}
+
+#Colorado {
+	    top: 45%;
+    left: 32%;
+}
+#Minnesota {
+	     top: 21%;
+    left: 52%;
+}
+#NorthDakota {
+	    top: 16%;
+    left: 43%;
+}
+#Wyoming {
+	    top: 29%;
+    left: 30%;
+}
+
+#DemAbroad {
+	    top: 41%;
+    left: 99%;
+}
+
+#Georgia {
+	top: 67%;
+    left: 75%;
+}
+
+#Mass {
+    top: 26%;
+    left: 95%;
+}
+
+#Ok {
+    top: 58%;
+    left: 47%;
+
+}
+
+#Tenn {
+	    top: 56%;
+    left: 68%;
+}
+
+#Texas {
+    top: 71%;
+    left: 44%;
+}
+
+#Vermont {
+    top: 18%;
+    left: 88%;
+}
+
+#Virgina {
+	    top: 47%;
+    left: 82%;
+}
+
+#Louisiana {
+    top: 72%;
+    left: 56%;
+}
+
+
+#PuertoRico {
+	    top: 87%;
+    left: 59%;
+}
+
+#Hawaii {
+	top: 89%;
+	left: 24%;
+}
+
+#Idaho {
+	    top: 23%;
+    left: 18%;
+}
+
+#Michigan {
+    top: 27%;
+    left: 68%;
+}
+
+#Mississippi {
+	    top: 67%;
+    left: 62%;
+}
+
+#Guam {
+	    top: 98%;
+    left: 63%;
+}
+
+#Kansas {
+    top: 47%;
+    left: 45%;
+}
+
+#Kentucky {
+	    top: 48%;
+    left: 69%;
+}
+
+#Maine {
+	    top: 11%;
+    left: 93%;
+}
+
+#Nebraska { 
+    top: 35%;
+    left: 42%;
+}
+
+
+#DC {
+	    top: 44%;
+    left: 87%;
+}
+
+#Northern {
+	    top: 87%;
+    left: 71%;
+}
+#Florida {
+	top: 82%;
+	left: 80%;
+}
+#Illinois {
+	top: 41%;
+	left: 61%;
+}
+#Missouri {
+	top: 49%;
+	left: 56%;
+}
+#NorthCarolina {
+	top: 54%;
+	left: 82%;
+}
+#Ohio {
+	top: 38%;
+	left: 73%;
+}
+
+#VirginIslands {
+	top: 85%;
+	left: 64%;
+}
+
+#Arizona {
+	top: 63%;
+	left: 19%;
+}
+#Utah {
+	top: 42%;
+	left: 20%;
+}
+#Washington {
+	top: 7%;
+	left: 11%;
+}
+#Wisconsin {
+	top: 25%;
+	left: 60%;
+}
+#NewYork {
+	top: 25%;
+	left: 85%;
+}
+#Connecticut {
+	top: 32%;
+	left: 90%;
+}
+#Delaware {
+	top: 40%;
+	left: 88%;
+}
+#Maryland {
+	top: 41%;
+	left:85%;
+}
+#Pennsylvania {
+	top: 34%;
+	left: 81%;
+}
+#RhodeIsland {
+	top: 31%;
+	left: 93%;
+}
+#Indiana {
+	top: 39%;
+	left: 66%;
+}
+#WestVirginia {
+	top: 43%;
+	left: 78%;
+}
+#Oregon {
+	top: 18%;
+	left: 6%;
+}
+#California {
+	top: 44%;
+	left: 5%;
+}
+#Montana {
+	top: 12%;
+	left: 24%;
+}
+#NewJersey {
+	top: 32%;
+	left: 86%;
+}
+#NewMexico {
+	top: 56%;
+	left: 29%;
+}
+#SouthDakota {
+	top: 25%;
+	left: 40%;
+}
+
+.straighten:after{
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+#popup {
+    position:relative;
+}
+.hoverbox {
+    position:absolute; 
+    padding:0.5em; 
+    background:#FFF; 
+    box-shadow:1px 1px 8px rgba(0,0,0,.4); 
+    z-index:300; 
+    font-family: cambria, georgia, serif;
+    line-height:1.3em; 
+    min-width:100px; 
+    max-width:200px;
+}
+.popuptitle {
+    color: #black;
+    font-family:Lucida Grande, veranda, sans-serif;
+    font-size:1.5em; 
+	letter-spacing: .01em;
+    font-weight:700;
+    clear:both;
+}
+@media only screen and (max-width: 900px) {
+	
+.headline{
+	width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+.textbox{
+    width: 100%;
+}
+}
+</style>
+
+<script>
+$(document).ready(function() {
+
+var data = 
+[{"id":"Iowa","name":"Iowa Caucus","date":"Feb. 1","results":"<br><b>Republican:</b> Trump 7, Cruz 8, Rubio 7, Kasich 1  <br> <b>Democrat:</b> Clinton 23, Sanders 21"},
+{"id":"NewHampshire","name":"New Hampshire","date":"Feb. 9","results":"<br><b>Republican:</b>Trump 11, Cruz 3, Rubio 2, Kasich 4  <br><b>Democrat:</b> Clinton 9, Sanders 15"},
+{"id":"Nevada","name":"Nevada Caucus","date":"Feb. 20 Democrat Feb. 23 GOP","results":"<br><b>Republican:</b> Trump 14, Cruz 6, Rubio 7, Kasich 1  <br> <b>Democrat:</b> Clinton 20, Sanders15"},
+{"id":"SouthCarolina","name":"South Carolina","date":"Feb. 20 GOP Feb. 27 Democrat","results":"<br><b>Republican:</b> Trump 50, Cruz 0, Rubio 0, Kasich 0  <br> <b>Democrat:</b> Clinton 39, Sanders 14"},
+{"id":"Alabama","name":"Alabama","date":" March 1","results":"<br><b>Republican:</b> Trump 36, Cruz 13, Rubio 1, Kasich 0  <br> <b>Democrat:</b>Clinton 44, Sanders 9"},
+{"id":"Alaska","name":"Alaska Caucus","date":"March 1 GOP March 26 Democrat","results":"<br><b>Republican:</b> Trump 11, Cruz 12, Rubio 5, Kasich 0"},
+{"id":"Samoa","name":"American Somoa  Caucus","date":"March 1 Democrat","results":"<br><b>Democrat:</b> Clinton 4,  Sanders 2"},
+{"id":"Arkansas","name":"Arkansas","date":" March 1","results":"<br><b>Republican:</b> Trump 16, Cruz 4, Rubio 9, Kasich 0  <br> <b>Democrat:</b>: Clinton 22, Sanders 10"},
+{"id":"Colorado","name":"Colorado Caucus","date":" March 1 Democrat ","results":"<br><b>Democrat:</b>Clinton 28, Sanders 38"},
+{"id":"Minnesota","name":"Minnesota Caucus","date":" March 1 ","results":"<br><b>Republican:</b>: Trump 8, Cruz 13, Rubio 17, Kasich 0  <br> <b>Democrat:</b> Clinton 31, Sanders 46"},
+{"id":"DemAbroad","name":"Democrats Abroad","date":" March 1","results":"tba"},
+{"id":"Georgia","name":"Georgia","date":" March 1","results":"<br><b>Republican:</b> Trump 40, Cruz 18, Rubio 14, Kasich 0  <br><b>Democrat:</b>Clinton 72, Sanders 28"},
+{"id":"Mass","name":"Massachusetts","date":" March 1","results":"<br><b>Republican:</b>: Trump 22, Cruz 4, Rubio 8, Kasich 8  <br> <b>Democrat:</b>Clinton 46, Sanders 45"},
+{"id":"Ok","name":"Oklahoma","date":" March 1","results":"<br><b>Republican:</b> Trump 13, Cruz 15, Rubio 12, Kasich 0  <br> <b>Democrat:</b> Clinton 17, Sanders 21"},
+{"id":"Tenn","name":"Tennessee","date":" March 1","results":"<br><b>Republican:</b> Trump 31, Cruz 15, Rubio 9, Kasich 0  <br><b>Democrat:</b>Clinton 44, Sanders 23"},
+{"id":"Texas","name":"Texas","date":" March 1","results":"<br><b>Republican:</b> Trump 47, Cruz 102, Rubio3, Kasich 0  <br> <b>Democrat:</b> Clinton 147,  Sanders 74"},
+{"id":"Vermont","name":"Vermont","date":" March 1","results":"<br><b>Republican:</b>Trump 8, Cruz 0, Rubio 0, Kasich 8  <br> <b>Democrat:</b>: Clinton 0, Sanders 16"},
+{"id":"Virgina","name":"Virginia","date":" March 1","results":"<br><b>Republican:</b>Trump 17, Cruz 8, Rubio 16,  Kasich 5  <br> <b>Democrat:</b>: Clinton 62, Sanders 33"},
+{"id":"Louisiana","name":"Louisiana","date":" March 5","results":"<br><b>Republican:</b> Trump 18, Cruz 18, Rubio 5, Kasich 0  <br> <b>Democrat:</b>: Clinton 37, Sanders 14"},
+{"id":"PuertoRico","name":"Puerto Rico","date":" March 6","results":"<br><b>Republican:</b>Trump 0, Cruz 0, Rubio 23, Kasich 0  "},
+{"id":"Kansas","name":"Kansas Caucus","date":" March 5","results":"<br><b>Republican:</b> Trump 9, Cruz 24, Rubio 6, Kasich 1  <br> <b>Democrat:</b>: Clinton10, Sanders 23"},
+{"id":"Kentucky","name":"Kentucky Caucus","date":" March 5 GOP May 17 Democrat Primary","results":"<br><b>Republican:</b> Trump 17, Cruz 15, Rubio 7, Kasich 7  "},
+{"id":"Maine","name":"Maine Caucus","date":" March 5 GOP March 6 Democrat","results":"<br><b>Republican:</b> Trump 9, Cruz 12, Rubio 0, Kasich 2  <br> <b>Democrat:</b>:Clinton 7, Sanders 15"},
+{"id":"Nebraska","name":"Nebraska Caucus","date":" March 5 Democrat May 10 GOP","results":" <br><b>Democrat:</b>: Clinton 10, Sanders 15"},
+{"id":"Hawaii","name":"Hawaii","date":" March 8 GOP March 26 Democrat","results":""},
+{"id":"Idaho","name":"Idaho","date":" March 8 GOP March 22 Democrat","results":""},
+{"id":"Michigan","name":"Michigan","date":" March 8","results":""},
+{"id":"Mississippi","name":"Mississippi","date":" March 8","results":""},
+{"id":"Guam","name":"Guam Caucus","date":" March 12 GOP May 7 Democrat","results":""},
+{"id":"DC","name":"District of Columbia Caucus","date":"March 12 GOP June 14 Democrat","results":""},
+{"id":"Northern","name":"Northern Mariana Islands Caucus","date":"March 12 Democrat March 15 GOP","results":""},
+{"id":"Wyoming","name":"Wyoming Caucus","date":"March 12 GOP April 9 Democrat","results":""},
+{"id":"Florida","name":"Florida","date":" March 15","results":""},
+{"id":"Illinois","name":"Illinois","date":" March 15","results":""},
+{"id":"Missouri","name":"Missouri","date":" March 15","results":""},
+{"id":"NorthCarolina","name":"North Carolina","date":" March 15","results":""},
+{"id":"Ohio","name":"Ohio","date":" March 15","results":""},
+{"id":"VirginIslands","name":"Virgin Islands Caucus","date":" March 19 GOP June 4 Democrat","results":""},
+{"id":"Arizona","name":"Arizona","date":" March 22","results":""},
+{"id":"Utah","name":"Utah","date":" March 22","results":""},
+{"id":"Washington","name":"Washington Caucus","date":" March 26 Democrat May 24 GOP","results":""},
+{"id":"Wisconsin","name":"Wisconsin","date":" April 5","results":""},
+{"id":"NewYork","name":"New York","date":" April 19","results":""},
+{"id":"Connecticut","name":"Connecticut","date":" April 26","results":""},
+{"id":"Delaware","name":"Delaware","date":" April 26","results":""},
+{"id":"Maryland","name":"Maryland","date":" April 26","results":""},
+{"id":"Pennsylvania","name":"Pennsylvania","date":" April 26","results":""},
+{"id":"RhodeIsland","name":"Rhode Island","date":" April 26","results":""},
+{"id":"Indiana","name":"Indiana","date":" May 3","results":""},
+{"id":"WestVirginia","name":"West Virgina","date":" May 10","results":"  "},
+{"id":"Oregon","name":"Oregon","date":" May 17","results":""},
+{"id":"California","name":"California","date":" June 7","results":""},
+{"id":"Montana","name":"Montana","date":" June 7","results":""},
+{"id":"NewJersey","name":"New Jersey","date":" June 7","results":""},
+{"id":"NewMexico","name":"New Mexico","date":" June 7","results":""},
+{"id":"SouthDakota","name":"South Dakota","date":" June 7","results":""},
+{"id":"NorthDakota","name":"North Dakota ","date":" June 7","results":""}]
+
+
+$(".primary, .caucus, .k2, .upprimary").click(function(){
+    $('.textbox').empty();
+    for (var i=0; i<data.length; i++) {
+    if (this.id == data[i].id) {
+        $(".textbox").append('<div class="popuptitle">'+data[i].name+'</div>' + data[i].date+data[i].results);
+    } 
+    } 
+});
+
+
+var pos, thex, they;
+
+$(".primary, .caucus, .k2, .upprimary").mouseover(function(e){
+    $(".hoverbox").remove();
+
+    // POSITIONING THE POP UP
+    if (navigator.userAgent.indexOf("Firefox")!=-1){
+        
+        pos = $("#popup").offset()
+        thex = e.pageX - pos.left + 10;
+        they = e.pageY - pos.top + 0;
+        if (thex > $("#popup").width() - 150) { thex = $("#popup").width() - 150 };
+        if (they > $("#popup").height() - 100) { they = $("#popup").height() - 100 };
+    } else {
+
+        pos = $("#popup").offset()
+        thex = event.pageX - pos.left + 10;
+        they = event.pageY - pos.top + 0;
+        if (thex > $("#popup").width() - 150) { thex = $("#popup").width() - 150 };
+        if (they > $("#popup").height() - 100) { they = $("#popup").height() - 100 };
+    }
+
+    // APPENDING TEXT TO THE POP UP
+    for (var i=0; i<data.length; i++) {
+    if (this.id == data[i].id) {
+    $("#popup").append('<div class="hoverbox" style="top:'+they+'px; left:'+thex+'px;"><div class="popuptitle">'+data[i].name+'</div></div>');
+    } 
+    
+
+    }   
+});
+
+$(".primary, .caucus, .k2, .upprimary").mouseleave(function(){
+    $(".hoverbox").remove();
+});
+
+
+});//doc ready
+</script>
+
+</body>
+</html>
+
+
+
